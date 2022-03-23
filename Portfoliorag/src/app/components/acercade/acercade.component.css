@@ -1,0 +1,33 @@
+.row{
+    padding: 20px;
+    border: 0.2em solid #02271b;
+}
+div{
+  
+    text-align: center;
+}
+
+@media (min-width: 387px){
+    #foto{
+        position: absolute;
+        width: 12%;
+        border-radius: 100%;
+        border: 0.2em solid gold;
+        left: 3%;
+        top:500px;
+    }
+}
+@media (max-width: 386px){
+    #foto{
+        position: absolute;
+        width: 12%;
+        border-radius: 100%;
+        border: 0.2em solid gold;
+        left: 42%;
+        top: 530px;
+    }
+}
+button{
+    float: right;
+    margin: 0.2em;
+}

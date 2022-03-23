@@ -1,0 +1,10 @@
+div{
+    background-color:#02271b ;
+    border: 0.2em solid gold;
+    border-radius: 0.4em;
+}
+
+app-sociales{
+    float: right;
+    margin:1em;
+}
