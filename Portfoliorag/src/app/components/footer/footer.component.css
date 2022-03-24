@@ -1,0 +1,13 @@
+.row{
+   
+    border: 0.1em solid#02271b;
+}
+footer{
+    color:gold;
+    background-color:#02271b ;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px -2px 5px gold ;
+}

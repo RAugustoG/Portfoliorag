@@ -1,0 +1,13 @@
+.row{
+   padding: 20px;
+   border: 0.1em solid #02271b;
+}
+
+h1,h6{
+   display: inline;
+}
+
+button{
+   float: right;
+   border: 0.1em solid gold
+}

@@ -1,5 +1,6 @@
 .row{
-    padding: 10px;
+    padding: 20px;
+    border: 0.1em solid #02271b;
    
 }
 div{
@@ -9,7 +10,7 @@ div{
 @media (min-width: 576px){
     #foto{
         position: absolute;
-        width: 10%;
+        width: 15%;
         border-radius: 100%;
         border: 0.2em solid gold;
         left: 3%;
@@ -19,23 +20,23 @@ div{
 @media (max-width: 575px){
     #foto{
         position: absolute;
-        width: 30%;
+        width: 15%;
         border-radius: 100%;
         border: 0.2em solid gold;
-        left: 34%;
-        top: 630px;
+        left: 3%;
+        top: 680px;
     }
 }
 
-@media (max-width: 388px){
+@media (max-width: 389px){
     #foto{
         position: absolute;
-        width: 30%;
+        width: 10%;
         border-radius: 100%;
         border: 0.2em solid gold;
-        left: 34%;
-        top: 720px;
-    }
+        left: 3%;
+        top: 760px;
+            }
 }
 
 #nombre{
@@ -44,5 +45,10 @@ div{
 }
 button{
     float: right;
-    margin: 0.2em;
+    border: 0.1em solid gold
+    ;
+}
+
+h1,h5,h6{
+    display:inline;
 }
