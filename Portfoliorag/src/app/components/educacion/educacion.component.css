@@ -1,9 +1,9 @@
-.row{
-    padding: 20px;
+.contenedor{
     border: 0.1em solid #02271b;
+   border-radius: 0.4em;
 }
-div{
-    background: white;
+.row{
+    margin: 0.2em;
 }
 
 #logoedu{

@@ -1,9 +1,13 @@
-.row{
-    padding: 20px;
-    border: 0.1em solid #02271b;
-}
 .contenedor{
+    border: 0.1em solid #02271b;
+   border-radius: 0.4em;
+ }
+.contenedor1{
     width: auto;
+}
+
+.row{
+    margin: 0.2em;
 }
 .parte1, .parte2{
     display: inline-block;
