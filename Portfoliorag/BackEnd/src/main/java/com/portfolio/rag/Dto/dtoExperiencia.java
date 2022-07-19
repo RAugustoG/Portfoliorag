@@ -6,23 +6,24 @@ package com.portfolio.rag.Dto;
 
 import javax.validation.constraints.NotBlank;
 
-/**
- *
- * @author Augusto
- */
 public class dtoExperiencia {
-    @NotBlank
+     @NotBlank
     private String nombreE;
     @NotBlank
     private String descripcionE;
+    @NotBlank
+    private String fechadesdeE;
+    @NotBlank
+    private String fechahastaE;
     
- 
     public dtoExperiencia() {
     }
 
-    public dtoExperiencia(String nombreE, String descripcionE) {
+    public dtoExperiencia(String nombreE, String descripcionE, String fechadesdeE, String fechahastaE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+        this.fechadesdeE = fechadesdeE;
+        this.fechahastaE = fechahastaE;
     }
    
     public String getNombreE() {
@@ -39,5 +40,22 @@ public class dtoExperiencia {
 
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
+    }
+    
+    public String getFechadesdeE() {
+        return fechadesdeE;
+    }
+  
+
+    public void setFechadesde(String fechadesdeE) {
+        this.fechadesdeE = fechadesdeE;
+    }
+    
+    public String getFechahastaE() {
+        return fechahastaE;
+    }
+    
+    public void setFechahastaE(String fechahastaE) {
+        this.fechahastaE = fechahastaE;
     }
 }

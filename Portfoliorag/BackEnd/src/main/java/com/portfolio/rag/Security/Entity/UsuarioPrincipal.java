@@ -17,7 +17,7 @@ import org.springframework.security.core.userdetails.UserDetails;
  */
 public class UsuarioPrincipal implements UserDetails {
 
-    private String nombre;
+   private String nombre;
     private String nombreUsuario;
     private String email;
     private String password;
@@ -79,5 +79,4 @@ public class UsuarioPrincipal implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
-
 }

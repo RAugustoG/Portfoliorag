@@ -5,10 +5,12 @@
 package com.portfolio.rag.Entity;
 
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
 
 @Entity
 public class Experiencia {
@@ -17,14 +19,18 @@ public class Experiencia {
     private int id;
     private String nombreE;
     private String descripcionE;
+    private String fechadesdeE;
+    private String fechahastaE;
     
    
     public Experiencia() {
     }
 
-    public Experiencia(String nombreE, String descripcionE) {
+    public Experiencia(String nombreE, String descripcionE, String fechadesdeE, String fechahastaE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+        this.fechadesdeE = fechadesdeE;
+        this.fechahastaE = fechahastaE;
     }
     
   
@@ -50,6 +56,22 @@ public class Experiencia {
 
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
+    }
+    
+    public String getFechadesdeE() {
+        return fechadesdeE;
+    }
+
+    public void setFechadesdeE(String fechadesdeE) {
+        this.fechadesdeE = fechadesdeE;
+    }
+    
+    public String getFechahastaE() {
+        return fechahastaE;
+    }
+
+    public void setFechahastaE(String fechahastaE) {
+        this.fechahastaE = fechahastaE;
     }
     
 }

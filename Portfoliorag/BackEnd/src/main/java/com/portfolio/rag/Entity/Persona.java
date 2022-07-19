@@ -1,6 +1,8 @@
 
 package com.portfolio.rag.Entity;
 
+
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,10 +12,11 @@ import javax.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
+
 @Getter @Setter
 @Entity
 public class Persona {
-  @Id
+ @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
   
@@ -27,9 +30,5 @@ public class Persona {
    
   @Size(min = 1, max = 50, message = "No cumple longitud especificada") 
   private String img;
-
-   
-
- 
       
 }

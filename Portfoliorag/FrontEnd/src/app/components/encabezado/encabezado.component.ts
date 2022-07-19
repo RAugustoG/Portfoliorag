@@ -22,7 +22,7 @@ export class EncabezadoComponent implements OnInit {
   }
 
   onLogOut():void{
-    this.tokenService.logout();
+    this.tokenService.logOut();
     window.location.reload();
   }
 

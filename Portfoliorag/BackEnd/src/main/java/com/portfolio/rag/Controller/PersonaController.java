@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "http://localhost:4200")
 
 public class PersonaController {
-   @Autowired IPersonaService ipersonaService;
+     @Autowired IPersonaService ipersonaService;
    
    @GetMapping("personas/traer")
    public List<Persona> getPersona(){
@@ -58,4 +58,4 @@ public class PersonaController {
        return ipersonaService.findPersona((long)1);
    }
    
-} 
+}

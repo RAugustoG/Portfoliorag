@@ -23,7 +23,7 @@ import javax.validation.constraints.NotNull;
  */
 @Entity
 public class Usuario {
-    @Id
+   @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)    
     private int id;
     @NotNull
@@ -96,7 +96,6 @@ public class Usuario {
     public void setRoles(Set<Rol> roles) {
         this.roles = roles;
     }
-    
     
     
 }

@@ -20,7 +20,7 @@ import org.springframework.stereotype.Service;
 @Service
 @Transactional
 public class SExperiencia {
-    @Autowired
+     @Autowired
      RExperiencia rExperiencia;
      
      public List<Experiencia> list(){

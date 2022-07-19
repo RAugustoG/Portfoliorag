@@ -1,6 +1,8 @@
 .contenedor{
-   border: 0.1em solid #02271b;
+  border: 0.1em solid gold;
   border-radius: 0.4em;
+  background: black;
+  color: white;
 }
 
 .row{
@@ -15,3 +17,5 @@ button{
    float: right;
    border: 0.1em solid gold
 }
+
+

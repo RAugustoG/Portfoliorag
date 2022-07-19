@@ -4,8 +4,8 @@
           <img src="../../../assets/APLogo.png" id="logoAP">
         </div>
         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-          <button name="button" (click)="login()" *ngIf = "!isLogged">Login</button>
-          <button name="button" (click)="onLogOut()" *ngIf = "isLogged">Logout</button>
+          <button type="button" class="btn btn-outline-warning" (click)="login()" *ngIf = "!isLogged">Login</button>
+          <button type="button" class="btn btn-outline-warning" (click)="onLogOut()" *ngIf = "isLogged">Logout</button>
 
           <a href="https://twitter.com/augusto_casm" target="_blank"><img src="../../../assets/twitter.png" id="social" ></a>
           <a href="https://www.instagram.com/augusto.casm/?hl=es-la" target="_blank"><img src="../../../assets/instagram.png" id="social"></a>

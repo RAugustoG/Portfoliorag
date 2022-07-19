@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.portfolio.rag.Security.Service;
 
 import com.portfolio.rag.Security.Entity.Usuario;
@@ -18,7 +14,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserDetailsImpl implements UserDetailsService{
-  @Autowired   
+   @Autowired   
   UsuarioService usuarioService;
 
     @Override

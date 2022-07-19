@@ -1,7 +1,10 @@
 .contenedor{
-    border: 0.1em solid #02271b;
-   border-radius: 0.4em;
+  border: solid gold;
+  border-radius: 0.4em;
+  background: black;
+  color: white;
 }
+
 .row{
     margin: 0.2em;
 }

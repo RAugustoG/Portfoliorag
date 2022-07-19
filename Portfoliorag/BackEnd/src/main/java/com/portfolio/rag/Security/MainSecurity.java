@@ -30,7 +30,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @RequiredArgsConstructor
 
 public class MainSecurity {
-    @Autowired
+   @Autowired
     UserDetailsImpl userDetailsImpl;
 
     @Autowired

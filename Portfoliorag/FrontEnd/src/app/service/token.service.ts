@@ -22,19 +22,19 @@ roles: Array<string> = [];
     return sessionStorage.getItem(TOKEN_KEY)!;
       }
 
-  public setUserName(username: string): void{
+  public setUserName(userName: string): void{
     window.sessionStorage.removeItem(USERNAME_kEY);
-    window.sessionStorage.setItem(USERNAME_kEY,username);
+    window.sessionStorage.setItem(USERNAME_kEY,userName);
   }
 
   public getUserName(): string{
     return sessionStorage.getItem(USERNAME_kEY)!;
       }
-    
+
   public setAuthorities(authorities: string[]):void{
     window.sessionStorage.removeItem(AUTHORITIES_KEY);
     window.sessionStorage.setItem(AUTHORITIES_KEY,JSON.stringify(authorities));
-      }    
+      }
 
   public getAuthorities(): string[]{
     this.roles = [];
@@ -43,10 +43,10 @@ roles: Array<string> = [];
         this.roles.push(authority.authority);
       });
     }
-   return this.roles; 
+   return this.roles;
   }
 
-  public logout():void{
+  public logOut():void{
     window.sessionStorage.clear();
   }
 

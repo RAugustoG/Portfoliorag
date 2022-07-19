@@ -1,11 +1,12 @@
 .contenedor{
 position: relative;
-background: #02271b;
 display: flex;
+background: black;
 align-items: center;
 justify-content: center;
 border-radius: 0.4em;
-border: 0.1em solid gold;
+border: solid gold;
+
 }
 
 .img-responsive{
