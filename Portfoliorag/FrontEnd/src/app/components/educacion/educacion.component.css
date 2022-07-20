@@ -9,20 +9,13 @@
     margin: 0.2em;
 }
 
-#logoedu{
-    width: 47px;
-    height: 30px;
-    background-size: 100% auto;
-    object-fit: cover;
-    border: 0.1em solid gold;
-}
-
 button{
     float: right;
-    border: 0.1em solid gold
+    border: 0.1em solid gold;
         }
 
 h1, h6{
     display: inline;
 }
 
+td {color: white;}

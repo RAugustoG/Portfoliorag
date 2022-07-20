@@ -1,19 +1,29 @@
 <div class="contenedor">
-<div class="row">
-    <h1>Educación <h6><button name="button">+</button></h6></h1> 
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-        
-      <h4><img src="../../../assets/UNT2.png" id="logoedu"> Universidad Nacional de Tucumán</h4>
-      <ul><li>Facultad de Ciencias Exactas y Tecnologías</li>
-      <li>Ingeniería en computación - 70% de carrera</li></ul>
-      <h4><img src="../../../assets/ArgentinaPrograma.jpg"id="logoedu"> Argentina Programa</h4>
-      <ul><li>Argentina Programa - Primera etapa aprobada: #SéProgramar</li></ul>
-      <h4><img src="../../../assets/Centros de Estudios del Tucumán.jpg" id="logoedu"> Centros de Estudios de Tucumán</h4>
-      <ul><li>Técnico reparador de PC</li></ul>
-      <h4><img src="../../../assets/Instituto Estrada.png" id="logoedu"> Instituto José Manuel Estrada </h4>
-      <ul><li>Perito en técnicas bancarias e impositivas</li></ul>
-  </div>
-    </div>
-  </div>
+  <div class="row">
+    <h1>Educación<h6><button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged"><i class="bi bi-plus-lg"></i></button></h6></h1>
 
+    <div class="col lg 1"></div>
+    <div class="col-lg-12">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educ">
+                    <td>
+                        <h3>{{Educacion.nombreE}}</h3>
+                    </td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td>desde {{Educacion.fechadesdeE}}</td>
+                    <td>hasta {{Educacion.fechahastaE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="bi bi-pencil-fill"></i> </button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                            <i class="bi bi-trash-fill"></i> </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+  </div>
