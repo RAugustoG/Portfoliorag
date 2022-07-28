@@ -11,13 +11,18 @@
                   <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="edu.descripcionE" required>
               </div>
               <div class="form-group">
-                <label for="nombreE">Fecha desde (DD-MM-AAAA)</label>
+                <label for="fechadesdeE">Fecha desde (DD-MM-AAAA)</label>
                 <input type="text" class="form-control" id="fechadesdeE" name="fechadesdeE" [(ngModel)]="edu.fechadesdeE" required>
             </div>
             <div class="form-group">
-              <label for="nombreE">Fecha hasta (DD-MM-AAAA)</label>
+              <label for="fechahastaE">Fecha hasta (DD-MM-AAAA)</label>
               <input type="text" class="form-control" id="fechahastaE" name="fechahastaE" [(ngModel)]="edu.fechahastaE" required>
           </div>
+          <div class="form-group">
+            <label for="imagenE">URL de la imagen a insertar</label>
+            <input type="text" class="form-control" id="imagenE" name="imagenE" [(ngModel)]="edu.imagenE" required>
+        </div>
+
               <button class="btn btn-primary">
                   Actualizar
               </button>

@@ -56,7 +56,7 @@ public class CEducacion {
             return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
         }
         sEducacion.delete(id);
-        return new ResponseEntity(new Mensaje("producto eliminado"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("formación eliminada"), HttpStatus.OK);
     }
 
     
@@ -67,7 +67,7 @@ public class CEducacion {
         if(sEducacion.existsByNombreE(dtoedu.getNombreE()))
             return new ResponseEntity(new Mensaje("Esa formación existe"), HttpStatus.BAD_REQUEST);
         
-        Educacion educacion = new Educacion(dtoedu.getNombreE(), dtoedu.getDescripcionE(), dtoedu.getFechadesdeE(), dtoedu.getFechahastaE());
+        Educacion educacion = new Educacion(dtoedu.getNombreE(), dtoedu.getDescripcionE(), dtoedu.getFechadesdeE(), dtoedu.getFechahastaE(), dtoedu.getImagenE());
         sEducacion.save(educacion);
         
         return new ResponseEntity(new Mensaje("Formación agregada"), HttpStatus.OK);
@@ -90,6 +90,7 @@ public class CEducacion {
         educacion.setDescripcionE((dtoedu.getDescripcionE()));
         educacion.setFechadesdeE(dtoedu.getFechadesdeE());
         educacion.setFechahastaE(dtoedu.getFechahastaE());
+        educacion.setImagenE(dtoedu.getImagenE());
         
         sEducacion.save(educacion);
         return new ResponseEntity(new Mensaje("Formación actualizada"), HttpStatus.OK);

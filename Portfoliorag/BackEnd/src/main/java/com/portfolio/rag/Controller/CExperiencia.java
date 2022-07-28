@@ -52,7 +52,7 @@ public class CExperiencia {
             return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
         }
         sExperiencia.delete(id);
-        return new ResponseEntity(new Mensaje("producto eliminado"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("experiencia eliminada"), HttpStatus.OK);
     }
 
     
@@ -63,7 +63,7 @@ public class CExperiencia {
         if(sExperiencia.existsByNombreE(dtoexp.getNombreE()))
             return new ResponseEntity(new Mensaje("Esa experiencia existe"), HttpStatus.BAD_REQUEST);
         
-        Experiencia experiencia = new Experiencia(dtoexp.getNombreE(), dtoexp.getDescripcionE(), dtoexp.getFechadesdeE(), dtoexp.getFechahastaE());
+        Experiencia experiencia = new Experiencia(dtoexp.getNombreE(), dtoexp.getDescripcionE(), dtoexp.getFechadesdeE(), dtoexp.getFechahastaE(), dtoexp.getImagenE());
         sExperiencia.save(experiencia);
         
         return new ResponseEntity(new Mensaje("Experiencia agregada"), HttpStatus.OK);
@@ -86,6 +86,7 @@ public class CExperiencia {
         experiencia.setDescripcionE((dtoexp.getDescripcionE()));
         experiencia.setFechadesdeE(dtoexp.getFechadesdeE());
         experiencia.setFechahastaE(dtoexp.getFechahastaE());
+        experiencia.setImagenE(dtoexp.getImagenE());
         
         sExperiencia.save(experiencia);
         return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);

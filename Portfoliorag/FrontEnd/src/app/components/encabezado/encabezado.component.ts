@@ -30,4 +30,6 @@ export class EncabezadoComponent implements OnInit {
     this.router.navigate(['/login'])
   }
 
+
+
 }

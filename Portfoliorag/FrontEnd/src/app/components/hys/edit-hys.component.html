@@ -1,0 +1,20 @@
+<div class="container" *ngIf="h">
+  <div class="row">
+      <div>
+          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+              <div class="form-group">
+                  <label for="nombreE">Nombre de la Hard o Soft Skill</label>
+                  <input type="text" class="form-control" id="nombrehys" name="nombrehys" [(ngModel)]="h.nombrehys" required>
+              </div>
+              <div class="form-group">
+                  <label for="porcentajehys">Porcentaje de la aptitud (Ingrese valor entero sin %) </label>
+                  <input type="text" class="form-control" id="porcentajehys" name="porcentajehys" [(ngModel)]="h.porcentajehys" required>
+                </div>
+              <button class="btn btn-primary">
+                  Actualizar
+              </button>
+          </form>
+      </div>
+  </div>
+</div>
+

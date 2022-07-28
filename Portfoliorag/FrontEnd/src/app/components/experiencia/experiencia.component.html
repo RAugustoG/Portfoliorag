@@ -1,24 +1,24 @@
 <div class="contenedor">
   <div class="row">
-    <h1>Experiencia laboral<h6><button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged"><i class="bi bi-plus-lg"></i></button></h6></h1>
+    <h1>Experiencia laboral<button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged"><i class="bi bi-plus"></i></button></h1>
 
     <div class="col lg 1"></div>
-    <div class="col-lg-12">
+       <div class="col-lg-12">
         <table class="table">
             <tbody>
                 <tr *ngFor="let Experiencia of expe">
                     <td>
-                        <h3>{{Experiencia.nombreE}}</h3>
+                        <h3><img src="{{Experiencia.imagenE}}" class="cat"> {{Experiencia.nombreE}}</h3>
                     </td>
                     <td>{{Experiencia.descripcionE}}</td>
-                    <td>desde {{Experiencia.fechadesdeE}}</td>
-                    <td>hasta {{Experiencia.fechahastaE}}</td>
+                    <td>{{Experiencia.fechadesdeE}} / {{Experiencia.fechahastaE}} </td>
+
                     <td *ngIf="isLogged">
-                        <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                        <button class="btn btn-light btn-sm" routerLink="/editexp/{{Experiencia.id}}">
                             <i class="bi bi-pencil-fill"></i> </button>
                     </td>
                     <td *ngIf="isLogged">
-                        <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                        <button class="btn btn-danger btn-sm" (click)="delete(Experiencia.id)">
                             <i class="bi bi-trash-fill"></i> </button>
                     </td>
                 </tr>

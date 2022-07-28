@@ -21,16 +21,18 @@ public class Experiencia {
     private String descripcionE;
     private String fechadesdeE;
     private String fechahastaE;
+    private String imagenE;
     
    
     public Experiencia() {
     }
 
-    public Experiencia(String nombreE, String descripcionE, String fechadesdeE, String fechahastaE) {
+    public Experiencia(String nombreE, String descripcionE, String fechadesdeE, String fechahastaE, String imagenE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
         this.fechadesdeE = fechadesdeE;
         this.fechahastaE = fechahastaE;
+        this.imagenE = imagenE;
     }
     
   
@@ -72,6 +74,14 @@ public class Experiencia {
 
     public void setFechahastaE(String fechahastaE) {
         this.fechahastaE = fechahastaE;
+    } 
+    
+    public String getImagenE() {
+        return imagenE;
+    }
+
+    public void setImagenE(String imagenE) {
+        this.imagenE = imagenE;    
     }
     
 }

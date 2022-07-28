@@ -5,6 +5,10 @@
   color: white;
 }
 
+button{
+  float: right;
+  border: 0.1em solid gold;
+      }
 
 .row{
    margin: 0.2em;
@@ -14,27 +18,65 @@ div{
 }
 
 @media (min-width: 576px){
-   #foto{
+   img{
        position: relative;
        width: 100%;
        border-radius: 100%;
        border: 0.1em solid gold;
        top:-20%;
-       left: 3%;
+       left: -5%;
        object-fit: cover;
    }
+   .cat{
+    height: 200px;
+   width: 200px;
+   }
+}
+@media (max-width: 575.9px){
+  img{
+      position: relative;
+      width: 30%;
+      border-radius: 100%;
+      border: 0.2em solid gold;
+      left: 2%;
+      object-fit: cover;
+  }
+  .cat{
+   height: 100px;
+  width: 100px;
+  }
 }
 
-@media (max-width: 575.9px){
-   #foto{
-       position: relative;
-       width: 30%;
-       border-radius: 100%;
-       border: 0.2em solid gold;
-       left: 2%;
-       object-fit: cover;
-   }
+@media (max-width: 1069px){
+  img{
+      position: relative;
+      width: 30%;
+      border-radius: 100%;
+      border: 0.2em solid gold;
+      left: -3%;
+      object-fit: cover;
+  }
+  .cat{
+   height: 120px;
+  width: 120px;
+  }
 }
+
+@media (min-width: 1068px){
+  img{
+      position: relative;
+      width: 30%;
+      border-radius: 100%;
+      border: 0.2em solid gold;
+      left: 2%;
+      object-fit: cover;
+  }
+  .cat{
+   height: 200px;
+  width: 200px;
+  }
+}
+
 #nombre{
    font-weight: bold;
    margin-top: 30%;

@@ -22,16 +22,18 @@ public class Educacion {
     private String descripcionE;
     private String fechadesdeE;
     private String fechahastaE;
+    private String imagenE;
     
    
     public Educacion() {
     }
 
-    public Educacion(String nombreE, String descripcionE, String fechadesdeE, String fechahastaE) {
+    public Educacion(String nombreE, String descripcionE, String fechadesdeE, String fechahastaE, String imagenE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
         this.fechadesdeE = fechadesdeE;
         this.fechahastaE = fechahastaE;
+        this.imagenE = imagenE;
     }
     
   
@@ -75,4 +77,11 @@ public class Educacion {
         this.fechahastaE = fechahastaE;
     }
     
+    public String getImagenE() {
+        return imagenE;
+    }
+
+    public void setImagenE(String imagenE) {
+        this.imagenE = imagenE;
+    }
 }
