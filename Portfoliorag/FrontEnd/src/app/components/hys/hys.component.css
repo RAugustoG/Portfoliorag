@@ -15,10 +15,10 @@ h1,h6{
 
 button{
    float: right;
-   border: 0.1em solid gold
+   border: 0.1em solid gold;
+   border-radius:100%;
 }
 
 p{
 align-items: center;
 }
-

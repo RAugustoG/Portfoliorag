@@ -12,22 +12,26 @@
 button{
     float: right;
     border: 0.1em solid gold;
+    border-radius:100%;
         }
 
-h1{
-
+h1, h6{
+    display: inline;
 }
 
-td {color: white;}
+td {
+  color: white;
+
+}
 
 img{
   max-width: 30%;
   max-height: 30%;
-  border-radius: 100%;
-  border: 0.1em solid gold;
+
+  border: 0.01em solid gold;
   }
 
 .cat{
- height: 100px;
- width: 100px;
+ height: 80px;
+ width: 80px;
 }

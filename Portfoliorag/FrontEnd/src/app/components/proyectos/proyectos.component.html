@@ -1,29 +1,29 @@
 <div class="contenedor">
-<div class="row">
-    <h1>Proyectos realizados <button type="button" class="btn btn-dark" routerLink="/nuevapro" *ngIf="isLogged"><i class="bi bi-plus"></i></button></h1>
-    <div class="col lg 1"></div>
-    <div class="col-lg-12">
-        <table class="table">
-            <tbody>
-                <tr *ngFor="let Proyectos of pro">
-                 <td> <h3><img src="{{Proyectos.imagenP}}" class="cat"><a href="{{Proyectos.urlP}}" target="_blank">{{Proyectos.nombreP}}</a></h3></td>
+  <div class="row">
+      <h1>Proyectos realizados <button type="button" class="btn btn-dark" routerLink="/nuevapro" *ngIf="isLogged"><i class="bi bi-plus"></i></button></h1>
+      <div class="col lg 1"></div>
+      <div class="col-lg-12">
+          <table class="table">
+              <tbody>
+                  <tr *ngFor="let Proyectos of pro">
+                   <td> <h3><img src="{{Proyectos.imagenP}}" class="cat"><a href="{{Proyectos.urlP}}" target="_blank"> {{Proyectos.nombreP}}<i class="bi bi-hand-index-fill small"></i></a></h3></td>
 
-                    <td>{{Proyectos.descripcionP}}</td>
-                    <td>{{Proyectos.fechaP}}</td>
+                      <td>{{Proyectos.descripcionP}}</td>
+                      <td>{{Proyectos.fechaP}}</td>
 
 
 
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-light btn-sm" routerLink="/editpro/{{Proyectos.id}}">
-                            <i class="bi bi-pencil-fill"></i> </button>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-danger btn-sm" (click)="delete(Proyectos.id)">
-                            <i class="bi bi-trash-fill"></i> </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+                      <td *ngIf="isLogged">
+                          <button class="btn btn-light btn-sm" routerLink="/editpro/{{Proyectos.id}}">
+                              <i class="bi bi-pencil-fill"></i> </button>
+                      </td>
+                      <td *ngIf="isLogged">
+                          <button class="btn btn-danger btn-sm" (click)="delete(Proyectos.id)">
+                              <i class="bi bi-trash-fill"></i> </button>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
 
-</div>
+  </div>

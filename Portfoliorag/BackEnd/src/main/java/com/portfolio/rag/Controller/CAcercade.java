@@ -59,7 +59,8 @@ public class CAcercade {
 
     
     @PostMapping("/create")
-    public ResponseEntity<?> create(@RequestBody dtoAcercade dtoacerca){      
+    public ResponseEntity<?> create(@RequestBody dtoAcercade dtoacerca){
+        
         if(StringUtils.isBlank(dtoacerca.getNombreA()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         if(sAcercade.existsByNombreA(dtoacerca.getNombreA()))

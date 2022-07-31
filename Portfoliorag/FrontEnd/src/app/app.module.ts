@@ -29,7 +29,7 @@ import { NewHysComponent } from './components/hys/new-hys.component';
 import { EditHysComponent } from './components/hys/edit-hys.component';
 import { EditProyectosComponent } from './components/proyectos/edit-proyectos.component';
 import { NewProyectosComponent } from "./components/proyectos/new-proyectos.component";
-import { RegistroComponent } from './components/registro/registro.component';
+
 
 
 @NgModule({
@@ -56,7 +56,7 @@ import { RegistroComponent } from './components/registro/registro.component';
     EditHysComponent,
     NewProyectosComponent,
     EditProyectosComponent,
-    RegistroComponent,
+
 
   ],
   imports: [

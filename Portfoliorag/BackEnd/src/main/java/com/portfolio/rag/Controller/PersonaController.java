@@ -42,13 +42,15 @@ public class PersonaController {
  
     @PreAuthorize("hasRole('ADMIN')") 
     @PutMapping("/personas/editar/{id}")
-   public Persona editPersona(@PathVariable Long id,@RequestParam("nombre")String nuevoNombre,@RequestParam("apellido")String nuevoApellido,@RequestParam("img")String nuevoImg){
+   public Persona editPersona(@PathVariable Long id,@RequestParam("nombre")String nuevoNombre,@RequestParam("apellido")String nuevoApellido,@RequestParam("img")String nuevoImg, @RequestParam("titulo")String nuevoTitulo, @RequestParam("acercade")String nuevoAcercade){
     
     Persona persona = ipersonaService.findPersona(id);
     persona.setNombre(nuevoNombre);
     persona.setApellido(nuevoApellido);
     persona.setImg(nuevoImg);
-
+    persona.setTitulo(nuevoTitulo);
+    persona.setAcercade(nuevoAcercade);
+    
     ipersonaService.savePersona(persona);
     return persona;
     }

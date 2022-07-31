@@ -12,6 +12,7 @@
 button{
     float: right;
     border: 0.1em solid gold;
+    border-radius:100%;
         }
 
 h1, h6{
@@ -23,18 +24,14 @@ td {
 
 }
 
-  img{
+img{
+  max-width: 30%;
+  max-height: 30%;
 
-    max-width: 30%;
-    max-height: 30%;
-    border-radius: 100%;
-    border: 0.1em solid gold;
-
-    }
-
-  .cat{
-   height: 100px;
-   width: 100px;
+  border: 0.01em solid gold;
   }
 
-
+.cat{
+ height: 80px;
+ width: 80px;
+}

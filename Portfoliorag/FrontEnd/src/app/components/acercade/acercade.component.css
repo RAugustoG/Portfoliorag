@@ -8,6 +8,7 @@
 button{
   float: right;
   border: 0.1em solid gold;
+  border-radius: 100%;
       }
 
 .row{
